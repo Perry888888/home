@@ -13,8 +13,8 @@
         </span>
         <!-- 以下信息请不要修改哦 -->
         <span class="hidden">
-          &amp;&nbsp;Made&nbsp;by
-          <a :href="config.github" target="_blank">
+          &amp;&nbsp;
+          <a v-if="siteIcp" href="https://www.imsyy.top" target="_blank">
             {{ config.author }}
           </a>
         </span>
