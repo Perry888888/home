@@ -109,12 +109,12 @@ onMounted(() => {
   const styleContent = "color: rgb(30,152,255);";
   const title1 = "Perry's home";
   const title2 = `
-  ____                               
- |  _ \    ___   _ __   _ __   _   _ 
- | |_) |  / _ \ | '__| | '__| | | | |
- |  __/  |  __/ | |    | |    | |_| |
- |_|      \___| |_|    |_|     \__, |
-                               |___/ ;
+ ____                      
+|  _ \ ___ _ __ _ __ _   _ 
+| |_) / _ \ '__| '__| | | |
+|  __/  __/ |  | |  | |_| |
+|_|   \___|_|  |_|   \__, |
+                     |___/ ;
   const content = `\n\n版本: ${config.version}\n主页: ${config.home}\nGithub: ${config.github}`;
   console.info(`%c${title1} %c${title2} %c${content}`, styleTitle1, styleTitle2, styleContent);
 });
