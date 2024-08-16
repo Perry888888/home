@@ -22,6 +22,11 @@
         <a v-if="siteIcp" href="https://beian.miit.gov.cn" target="_blank">
           &amp;
           {{ siteIcp }}
+        </span>
+        <!-- 站点备案 -->
+        <a v-if="siteGaw" href="https://beian.mps.gov.cn/#/query/webSearch?code=41042302000207" target="_blank">
+          &amp;
+          {{ siteGaw }}
         </a>
       </div>
       <div v-else class="lrc">
@@ -48,6 +53,7 @@ const fullYear = new Date().getFullYear();
 // 加载配置数据
 const siteStartDate = ref(import.meta.env.VITE_SITE_START);
 const siteIcp = ref(import.meta.env.VITE_SITE_ICP);
+const siteGaw = ref(import.meta.env.VITE_SITE_GAW);
 const siteAnthor = ref(import.meta.env.VITE_SITE_ANTHOR);
 const siteUrl = computed(() => {
   const url = import.meta.env.VITE_SITE_URL;
